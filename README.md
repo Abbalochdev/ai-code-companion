@@ -1,8 +1,8 @@
 # 🚀 VS Code AI Code Companion
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/yourusername/ai-code-companion)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/abbalochdev/ai-code-companion)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![VS Code](https://img.shields.io/badge/VS%20Code-1.80.0+-blueviolet.svg)](https://code.visualstudio.com/updates/v1_80)
+[![VS Code](https://img.shields.io/badge/VS%20Code-2.10.0+-blueviolet.svg)](https://code.visualstudio.com/updates/)
 
 ## 🌟 Project Motive
 
