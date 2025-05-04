@@ -1,0 +1,124 @@
+{
+    "name": "vscode-mcp-server",
+    "displayName": "AI Code Companion",
+    "description": "Advanced AI-powered code analysis, documentation, and testing assistant for VS Code with intelligent multi-model routing",
+    "version": "0.2.0",
+    "keywords": ["ai", "code-analysis", "documentation", "testing", "productivity"],
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Other",
+        "Programming Languages",
+        "Machine Learning"
+    ],
+    "activationEvents": [
+        "onCommand:mcp.showMenu",
+        "onCommand:mcp.analyzeWorkspace",
+        "onCommand:mcp.analyzeFile",
+        "onCommand:mcp.analyzeSelection",
+        "onCommand:mcp.chooseModel",
+        "onCommand:mcp.showLastAnalysis",
+        "onCommand:mcp.analyzeSymbol"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "configuration": {
+            "title": "AI Code Companion",
+            "properties": {
+                "aiCompanion.enableTelemetry": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Enable anonymous usage telemetry"
+                },
+                "aiCompanion.analysisDepth": {
+                    "type": "string",
+                    "default": "standard",
+                    "enum": ["light", "standard", "deep"],
+                    "description": "Depth of code analysis"
+                },
+                "aiCompanion.models": {
+                    "type": "object",
+                    "default": {
+                        "code": "Claude",
+                        "testing": "ChatGPT",
+                        "documentation": "Gemini"
+                    },
+                    "description": "AI model assignments for different analysis types"
+                },
+                "aiCompanion.experimentalFeatures": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Enable experimental AI features"
+                },
+                "mcpServer.aiModels": {
+                    "type": "object",
+                    "default": {
+                        "code": "claude",
+                        "testing": "chatgpt",
+                        "documentation": "gemini"
+                    },
+                    "description": "AI model assignments for different types of analysis"
+                },
+                "mcpServer.analysisDepth": {
+                    "type": "string",
+                    "enum": ["basic", "detailed", "comprehensive"],
+                    "default": "detailed",
+                    "description": "Depth of analysis to perform on workspace content"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "mcp.showMenu",
+                "title": "MCP: Show Menu"
+            },
+            {
+                "command": "mcp.analyzeWorkspace",
+                "title": "MCP: Analyze Workspace"
+            },
+            {
+                "command": "mcp.analyzeFile",
+                "title": "MCP: Analyze Current File"
+            },
+            {
+                "command": "mcp.analyzeSelection",
+                "title": "MCP: Analyze Selection"
+            },
+            {
+                "command": "mcp.chooseModel",
+                "title": "MCP: Choose AI Model"
+            },
+            {
+                "command": "mcp.showLastAnalysis",
+                "title": "MCP: View Last Analysis"
+            },
+            {
+                "command": "mcp.analyzeSymbol",
+                "title": "MCP: Analyze Symbol"
+            }
+        ]
+    },
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "lint": "eslint src --ext ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "build": "tsc",
+        "prepare": "npm run build",
+        "pretest": "npm run lint",
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.60.0",
+        "@types/node": "^16.x",
+        "@typescript-eslint/eslint-plugin": "^5.x",
+        "@typescript-eslint/parser": "^5.x",
+        "eslint": "^8.x",
+        "typescript": "^4.x"
+    },
+    "dependencies": {}
+}

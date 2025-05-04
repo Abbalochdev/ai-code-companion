@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+
+# Build output
+out/
+dist/
+
+# Environment files
+.env
+
+# VS Code specific
+.vscode/
+*.vsix
+
+# Logs
+*.log
+
+# Temporary files
+.DS_Store
+Thumbs.db
+
+# TypeScript compiled files
+*.tsbuildinfo
+
+# Dependency lock files
+package-lock.json
+yarn.lock

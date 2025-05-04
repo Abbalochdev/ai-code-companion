@@ -1,0 +1,38 @@
+.
+├── src/
+│   ├── extension.ts              # Main activation point, command registration, initializes core components & UI
+│   │
+│   ├── core/                     # Central logic of the extension
+│   │   ├── mcpServer.ts          # Orchestrates analysis requests, manages context cache
+│   │   ├── aiModelRouter.ts      # Determines the best AI model based on context
+│   │   ├── contextBuilder.ts     # NEW: Handles gathering workspace/file/selection context (symbols, imports, etc.)
+│   │   └── types/                # Shared type definitions
+│   │       ├── workspaceContext.ts # Definition of WorkspaceContext
+│   │       └── aiModel.ts        # Definition of AIModel interface and related types
+│   │
+│   ├── models/                   # Implementations or simulations of different AI models
+│   │   ├── codeAnalyzer.ts       # Logic for the 'code' analysis model/specialty
+│   │   ├── testAnalyzer.ts       # Logic for the 'testing' analysis model/specialty
+│   │   ├── docAnalyzer.ts        # Logic for the 'documentation' analysis model/specialty
+│   │   └── modelProvider.ts      # NEW: Manages/provides instances of available models to the router
+│   │
+│   ├── services/                 # Lower-level services interacting with VS Code API or external resources
+│   │   ├── vscodeService.ts      # NEW: Wraps common VS Code API interactions (documents, symbols, progress, FS)
+│   │   └── configurationService.ts # NEW: Manages reading/accessing extension settings
+│   │
+│   ├── ui/                       # UI related components
+│   │   ├── statusBarProvider.ts  # Manages the status bar item
+│   │   ├── webviewProvider.ts    # Manages the results webview panel
+│   │   ├── codeLensProvider.ts   # Provides the 'Analyze' code lenses
+│   │   └── notificationService.ts# NEW: Centralizes showing messages, progress, errors
+│   │
+│   └── utils/                    # Common utility functions
+│       └── helpers.ts            # General helper functions (e.g., flattening symbols)
+│
+├── .vscode/
+│   └── launch.json             # Debugging configuration
+├── .eslintrc.json                # ESLint configuration
+├── .gitignore
+├── package.json                  # Extension manifest, dependencies, scripts
+├── README.md                     # Documentation
+└── tsconfig.json                 # TypeScript configuration
