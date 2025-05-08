@@ -38,52 +38,6 @@ Our extension implements a sophisticated AI model routing system that:
 - Inline AI assistance via CodeLens
 - Configurable AI model preferences
 
-## 🛠 Technical Architecture
-
-### Core Components
-- **MCPServer**: Central orchestration of analysis requests
-- **AIModelRouter**: Intelligent model selection and routing
-- **WorkspaceContext**: Comprehensive project context tracking
-
-### Supported Analysis Types
-- Workspace analysis
-- Current file analysis
-- Code selection analysis
-- Performance optimization
-- Bug detection
-
-## 📦 Installation
-
-1. Open Visual Studio Code
-2. Go to Extensions (Ctrl+Shift+X)
-3. Search for "AI Code Companion"
-4. Click Install
-
-## 🔧 Configuration
-
-Customize your AI Code Companion experience through VS Code settings:
-- Select preferred AI models
-- Configure analysis depth
-- Set caching preferences
-
-## 🤝 Contributing
-
-Contributions are welcome! Please check our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🌐 Support
-
-For issues, feature requests, or discussions, please visit our [GitHub Repository](https://github.com/abbalochdev/ai-code-companion/issues).
-
-- **Flexible Analysis Modes**
-  - Workspace-wide analysis
-  - Single file deep dive
-  - Precise code selection examination
-
-## 🛠 Technical Architecture
 
 ### AI Model Router
 ```typescript
@@ -94,7 +48,7 @@ class AIModelRouter {
     return selectedModel.process(context);
   }
 }
-```
+
 
 ### Supported Languages
 - TypeScript
@@ -136,7 +90,7 @@ If you find this extension helpful, please give us a star on GitHub!
 2. Go to Extensions (Ctrl+Shift+X)
 3. Search for "AI Code Companion"
 4. Click "Install"
-comming soon
+coming soon
 
 ### Manual Installation
 ### Method 2: Manual Installation
