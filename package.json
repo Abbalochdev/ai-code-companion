@@ -12,15 +12,7 @@
         "Programming Languages",
         "Machine Learning"
     ],
-    "activationEvents": [
-        "onCommand:mcp.showMenu",
-        "onCommand:mcp.analyzeWorkspace",
-        "onCommand:mcp.analyzeFile",
-        "onCommand:mcp.analyzeSelection",
-        "onCommand:mcp.chooseModel",
-        "onCommand:mcp.showLastAnalysis",
-        "onCommand:mcp.analyzeSymbol"
-    ],
+    
     "main": "./out/extension.js",
     "contributes": {
         "configuration": {

@@ -138,4 +138,8 @@ A cutting-edge VS Code extension that revolutionizes code development with AI-po
 git clone [https://github.com/abbalochdev/vscode-ai-assistant.git](https://github.com/abbalochdev/vscode-ai-assistant.git)
 cd vscode-ai-assistant
 npm install
-code --install-extension
+npm compile
+npm run compile
+click F5 or Run and Debug (Ctrl+Shift+D)
+Select "Extension Development Host"
+it start a new window of vscode with the extension installed
