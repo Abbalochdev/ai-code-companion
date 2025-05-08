@@ -1,53 +1,82 @@
 # 🚀 VS Code AI Code Companion
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/abbalochdev/ai-code-companion)
+[![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](https://github.com/abbalochdev/ai-code-companion)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![VS Code](https://img.shields.io/badge/VS%20Code-2.10.0+-blueviolet.svg)](https://code.visualstudio.com/updates/)
+[![VS Code](https://img.shields.io/badge/VS%20Code-1.87.0+-blueviolet.svg)](https://code.visualstudio.com/updates/)
 
-## 🌟 Project Motive
+## 🌟 Project Overview
 
-In the rapidly evolving landscape of software development, developers face increasing complexity in code creation, maintenance, and optimization. The AI Code Companion extension emerges as a revolutionary tool designed to:
+The AI Code Companion is an intelligent VS Code extension that revolutionizes software development through advanced AI-powered assistance. Designed to enhance developer productivity and code quality across various programming tasks.
 
-- **Democratize AI-Powered Development**: Make advanced AI coding assistance accessible to developers of all skill levels
-- **Enhance Productivity**: Reduce repetitive tasks and accelerate development cycles
-- **Provide Intelligent Guidance**: Offer context-aware, multi-model AI support across various development stages
+## 🤖 Core Capabilities
 
-## 🤖 Core Philosophy
+### Intelligent Model Routing
+Our extension implements a sophisticated AI model routing system that:
+- Dynamically selects the most appropriate AI model
+- Provides context-aware code analysis
+- Supports multiple specialized AI models
 
-Our extension is built on three fundamental principles:
-1. **Contextual Intelligence**: Understanding code beyond syntax
-2. **Model Diversity**: Leveraging strengths of multiple AI models
-3. **Developer Empowerment**: Augmenting human creativity, not replacing it
-
-## 🌐 Unique Multi-Model Routing
-
-Unlike traditional single-model assistants, our extension implements an intelligent routing mechanism:
-
-- **Claude**: Complex code generation and advanced analysis
-- **Gemini**: Documentation and high-level architectural insights
-- **ChatGPT**: Versatile problem-solving and general assistance
-
-The routing algorithm dynamically selects the most appropriate AI model based on:
-- Code complexity
-- Project context
-- Specific task requirements
+### Workspace Context Analysis
+- Comprehensive workspace scanning
+- Detailed context building
+- Performance-optimized caching mechanism
 
 ## 🚀 Key Features
 
-- **Intelligent Code Analysis**
-  - Deep contextual understanding
-  - Comprehensive code insights
-  - Intelligent pattern recognition
+### 1. Intelligent Code Analysis
+- Multi-language support (TypeScript, JavaScript, Python, Java, and more)
+- Deep contextual code understanding
+- Intelligent pattern recognition
 
-- **Multi-Model AI Support**
-  - Adaptive model selection
-  - Specialized task handling
-  - Seamless model transitions
+### 2. AI Model Coordination
+- Claude: Advanced code generation and complex analysis
+- Gemini: Architectural insights and documentation
+- ChatGPT: General problem-solving
 
-- **Advanced Assistance**
-  - Automated documentation
-  - Proactive bug detection
-  - Performance optimization recommendations
+### 3. Developer Productivity Tools
+- Workspace-wide code analysis
+- Inline AI assistance via CodeLens
+- Configurable AI model preferences
+
+## 🛠 Technical Architecture
+
+### Core Components
+- **MCPServer**: Central orchestration of analysis requests
+- **AIModelRouter**: Intelligent model selection and routing
+- **WorkspaceContext**: Comprehensive project context tracking
+
+### Supported Analysis Types
+- Workspace analysis
+- Current file analysis
+- Code selection analysis
+- Performance optimization
+- Bug detection
+
+## 📦 Installation
+
+1. Open Visual Studio Code
+2. Go to Extensions (Ctrl+Shift+X)
+3. Search for "AI Code Companion"
+4. Click Install
+
+## 🔧 Configuration
+
+Customize your AI Code Companion experience through VS Code settings:
+- Select preferred AI models
+- Configure analysis depth
+- Set caching preferences
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🌐 Support
+
+For issues, feature requests, or discussions, please visit our [GitHub Repository](https://github.com/abbalochdev/ai-code-companion/issues).
 
 - **Flexible Analysis Modes**
   - Workspace-wide analysis
@@ -138,4 +167,8 @@ A cutting-edge VS Code extension that revolutionizes code development with AI-po
 git clone [https://github.com/abbalochdev/vscode-ai-assistant.git](https://github.com/abbalochdev/vscode-ai-assistant.git)
 cd vscode-ai-assistant
 npm install
-code --install-extension
+npm compile
+npm run compile
+click F5 or Run and Debug (Ctrl+Shift+D)
+Select "Extension Development Host"
+it start a new window of vscode with the extension installed
