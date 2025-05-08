@@ -1,9 +1,16 @@
 {
-    "name": "vscode-mcp-server",
-    "displayName": "AI Code Companion",
+    "name": "abbalochdev-ai-code-companion",
+    "displayName": "AI Code Companion - Personal",
     "description": "Advanced AI-powered code analysis, documentation, and testing assistant for VS Code with intelligent multi-model routing",
     "version": "0.2.0",
+    "publisher": "AbbalochDev",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abbalochdev/ai-code-companion.git"
+    },
     "keywords": ["ai", "code-analysis", "documentation", "testing", "productivity"],
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.60.0"
     },
@@ -14,9 +21,15 @@
     ],
     
     "main": "./out/extension.js",
+    "activationEvents": [
+        "onCommand:mcp.showMenu",
+        "onCommand:mcp.analyzeWorkspace",
+        "onCommand:mcp.analyzeFile",
+        "onCommand:mcp.analyzeSelection"
+    ],
     "contributes": {
         "configuration": {
-            "title": "AI Code Companion",
+            "title": "AI Code Companion - Personal",
             "properties": {
                 "aiCompanion.enableTelemetry": {
                     "type": "boolean",
@@ -63,31 +76,31 @@
         "commands": [
             {
                 "command": "mcp.showMenu",
-                "title": "MCP: Show Menu"
+                "title": "MCP: Show Menu - Personal"
             },
             {
                 "command": "mcp.analyzeWorkspace",
-                "title": "MCP: Analyze Workspace"
+                "title": "MCP: Analyze Workspace - Personal"
             },
             {
                 "command": "mcp.analyzeFile",
-                "title": "MCP: Analyze Current File"
+                "title": "MCP: Analyze Current File - Personal"
             },
             {
                 "command": "mcp.analyzeSelection",
-                "title": "MCP: Analyze Selection"
+                "title": "MCP: Analyze Selection - Personal"
             },
             {
                 "command": "mcp.chooseModel",
-                "title": "MCP: Choose AI Model"
+                "title": "MCP: Choose AI Model - Personal"
             },
             {
                 "command": "mcp.showLastAnalysis",
-                "title": "MCP: View Last Analysis"
+                "title": "MCP: View Last Analysis - Personal"
             },
             {
                 "command": "mcp.analyzeSymbol",
-                "title": "MCP: Analyze Symbol"
+                "title": "MCP: Analyze Symbol - Personal"
             }
         ]
     },
