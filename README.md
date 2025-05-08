@@ -122,31 +122,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 If you find this extension helpful, please give us a star on GitHub!
 
-## 🌟 Overview
 
-A cutting-edge VS Code extension that revolutionizes code development with AI-powered insights, analysis, and assistance. Leveraging multiple AI models, this extension provides intelligent support across various stages of software development.
-
-## 🤖 Features
-
-- **Smart Code Analysis**
-  - 🔍 Deep contextual understanding of your codebase
-  - 📊 Comprehensive code insights and suggestions
-  - 🧠 Intelligent pattern recognition
-
-- **Multi-Model AI Support**
-  - 💻 **Claude**: Advanced code analysis and generation
-  - 🧪 **ChatGPT**: Intelligent testing and test coverage
-  - 📄 **Gemini**: Documentation and code explanation
-
-- **Intelligent Assistance**
-  - 📝 Automated documentation generation
-  - 🐛 Proactive bug detection and refactoring suggestions
-  - 🚀 Performance optimization recommendations
-
-- **Flexible Analysis Modes**
-  - 🌐 Workspace-wide analysis
-  - 📁 Single file deep dive
-  - 🔬 Precise code selection examination
 
 ## 🛠 Installation
 
@@ -160,15 +136,16 @@ A cutting-edge VS Code extension that revolutionizes code development with AI-po
 2. Go to Extensions (Ctrl+Shift+X)
 3. Search for "AI Code Companion"
 4. Click "Install"
+comming soon
 
 ### Manual Installation
 ### Method 2: Manual Installation
 ```bash
-git clone [https://github.com/abbalochdev/vscode-ai-assistant.git](https://github.com/abbalochdev/vscode-ai-assistant.git)
-cd vscode-ai-assistant
-npm install
-npm compile
-npm run compile
-click F5 or Run and Debug (Ctrl+Shift+D)
-Select "Extension Development Host"
-it start a new window of vscode with the extension installed
+git clone [https://github.com/abbalochdev/ai-code-companion.git](https://github.com/abbalochdev/ai-code-companion.git)
+cd ai-code-companion
+1. npm install
+2. npm compile
+3. npm run compile
+4. click F5 or Run and Debug (Ctrl+Shift+D)
+5. Select "Extension Development Host"
+6. it start a new window of vscode with the extension installed
