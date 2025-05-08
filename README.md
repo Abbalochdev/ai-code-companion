@@ -1,8 +1,8 @@
 # 🚀 VS Code AI Code Companion
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/yourusername/ai-code-companion)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/abbalochdev/ai-code-companion)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![VS Code](https://img.shields.io/badge/VS%20Code-1.80.0+-blueviolet.svg)](https://code.visualstudio.com/updates/v1_80)
+[![VS Code](https://img.shields.io/badge/VS%20Code-2.10.0+-blueviolet.svg)](https://code.visualstudio.com/updates/)
 
 ## 🌟 Project Motive
 
@@ -138,8 +138,4 @@ A cutting-edge VS Code extension that revolutionizes code development with AI-po
 git clone [https://github.com/abbalochdev/vscode-ai-assistant.git](https://github.com/abbalochdev/vscode-ai-assistant.git)
 cd vscode-ai-assistant
 npm install
-npm compile
-npm run compile
-click F5 or Run and Debug (Ctrl+Shift+D)
-Select "Extension Development Host"
-it start a new window of vscode with the extension installed
+code --install-extension
