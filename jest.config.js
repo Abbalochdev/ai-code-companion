@@ -7,6 +7,9 @@ module.exports = {
     },
     testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+    moduleNameMapper: {
+        '^vscode$': '<rootDir>/tests/mocks/vscode.ts',
+    },
     coverageDirectory: './coverage',
     collectCoverageFrom: [
         'src/**/*.{js,ts}',

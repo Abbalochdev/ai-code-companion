@@ -1,12 +1,14 @@
 # 🚀 VS Code AI Code Companion
 
-[![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](https://github.com/abbalochdev/ai-code-companion)
+[![Version](https://img.shields.io/badge/version-0.2.1-blue.svg)](https://github.com/abbalochdev/ai-code-companion)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.87.0+-blueviolet.svg)](https://code.visualstudio.com/updates/)
 
 ## 🌟 Project Overview
 
 The AI Code Companion is an intelligent VS Code extension that revolutionizes software development through advanced AI-powered assistance. Designed to enhance developer productivity and code quality across various programming tasks.
+
+See the [CHANGELOG](CHANGELOG.md) for details on the latest updates and enhancements.
 
 ## 🤖 Core Capabilities
 
@@ -37,6 +39,12 @@ Our extension implements a sophisticated AI model routing system that:
 - Workspace-wide code analysis
 - Inline AI assistance via CodeLens
 - Configurable AI model preferences
+
+### 4. New in v0.2.2
+- Enhanced file selection logic for different analysis types
+- Improved suggestion extraction with better categorization
+- Specialized prompting for different analysis contexts
+- More reliable test infrastructure
 
 
 ### AI Model Router
@@ -90,7 +98,14 @@ If you find this extension helpful, please give us a star on GitHub!
 2. Go to Extensions (Ctrl+Shift+X)
 3. Search for "AI Code Companion"
 4. Click "Install"
-coming soon
+Coming soon
+
+## 📝 Release History
+
+- **0.2.1** (2025-05-08): Enhanced file selection, improved suggestion extraction, and better test infrastructure
+- **0.2.0** (2025-04-15): Initial release with MCP server and AI model routing
+
+For detailed release notes, see the [CHANGELOG](CHANGELOG.md).
 
 ### Manual Installation
 ### Method 2: Manual Installation

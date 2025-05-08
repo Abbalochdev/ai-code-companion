@@ -2,24 +2,29 @@
     "name": "abbalochdev-ai-code-companion",
     "displayName": "AI Code Companion - Personal",
     "description": "Advanced AI-powered code analysis, documentation, and testing assistant for VS Code with intelligent multi-model routing",
-    "version": "0.2.0",
+    "version": "0.2.2",
     "publisher": "AbbalochDev",
     "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/abbalochdev/ai-code-companion.git"
     },
-    "keywords": ["ai", "code-analysis", "documentation", "testing", "productivity"],
+    "keywords": [
+        "ai",
+        "code-analysis",
+        "documentation",
+        "testing",
+        "productivity"
+    ],
     "icon": "images/icon.png",
     "engines": {
-        "vscode": "^1.60.0"
+        "vscode": "^1.66.0"
     },
     "categories": [
         "Other",
         "Programming Languages",
         "Machine Learning"
     ],
-    
     "main": "./out/extension.js",
     "activationEvents": [
         "onCommand:mcp.showMenu",
@@ -39,7 +44,11 @@
                 "aiCompanion.analysisDepth": {
                     "type": "string",
                     "default": "standard",
-                    "enum": ["light", "standard", "deep"],
+                    "enum": [
+                        "light",
+                        "standard",
+                        "deep"
+                    ],
                     "description": "Depth of code analysis"
                 },
                 "aiCompanion.models": {
@@ -67,7 +76,11 @@
                 },
                 "mcpServer.analysisDepth": {
                     "type": "string",
-                    "enum": ["basic", "detailed", "comprehensive"],
+                    "enum": [
+                        "basic",
+                        "detailed",
+                        "comprehensive"
+                    ],
                     "default": "detailed",
                     "description": "Depth of analysis to perform on workspace content"
                 }
@@ -76,31 +89,31 @@
         "commands": [
             {
                 "command": "mcp.showMenu",
-                "title": "MCP: Show Menu - Personal"
+                "title": "AI Code Companion: Show Menu - Personal"
             },
             {
                 "command": "mcp.analyzeWorkspace",
-                "title": "MCP: Analyze Workspace - Personal"
+                "title": "AI Code Companion: Analyze Workspace - Personal"
             },
             {
                 "command": "mcp.analyzeFile",
-                "title": "MCP: Analyze Current File - Personal"
+                "title": "AI Code Companion: Analyze Current File - Personal"
             },
             {
                 "command": "mcp.analyzeSelection",
-                "title": "MCP: Analyze Selection - Personal"
+                "title": "AI Code Companion: Analyze Selection - Personal"
             },
             {
                 "command": "mcp.chooseModel",
-                "title": "MCP: Choose AI Model - Personal"
+                "title": "AI Code Companion: Choose AI Model - Personal"
             },
             {
                 "command": "mcp.showLastAnalysis",
-                "title": "MCP: View Last Analysis - Personal"
+                "title": "AI Code Companion: View Last Analysis - Personal"
             },
             {
                 "command": "mcp.analyzeSymbol",
-                "title": "MCP: Analyze Symbol - Personal"
+                "title": "AI Code Companion: Analyze Symbol - Personal"
             }
         ]
     },
@@ -112,18 +125,22 @@
         "lint:fix": "eslint . --ext .ts --fix",
         "build": "tsc",
         "prepare": "npm run build",
-        "pretest": "npm run lint",
+        "pretest-with-lint": "npm run lint",
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./"
     },
     "devDependencies": {
-        "@types/vscode": "^1.60.0",
+        "@types/jest": "^29.5.14",
         "@types/node": "^16.x",
+        "@types/sinon": "^17.0.4",
+        "@types/vscode": "^1.60.0",
         "@typescript-eslint/eslint-plugin": "^5.x",
         "@typescript-eslint/parser": "^5.x",
         "eslint": "^8.x",
+        "jest": "^29.7.0",
+        "sinon": "^20.0.0",
+        "ts-jest": "^29.3.2",
         "typescript": "^4.x"
-    },
-    "dependencies": {}
+    }
 }

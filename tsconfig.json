@@ -18,7 +18,7 @@
         "resolveJsonModule": true,
         "allowSyntheticDefaultImports": true,
         "skipLibCheck": true,
-        "types": ["node", "vscode"],
+        "types": ["node", "vscode", "jest"],
         "typeRoots": ["./node_modules/@types", "./src/types"],
         "baseUrl": ".",
         "paths": {
