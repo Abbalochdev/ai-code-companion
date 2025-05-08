@@ -98,8 +98,7 @@ coming soon
 git clone [https://github.com/abbalochdev/ai-code-companion.git](https://github.com/abbalochdev/ai-code-companion.git)
 cd ai-code-companion
 1. npm install
-2. npm compile
-3. npm run compile
-4. click F5 or Run and Debug (Ctrl+Shift+D)
-5. Select "Extension Development Host"
-6. it start a new window of vscode with the extension installed
+2. npm run compile
+3. click F5 or Run and Debug (Ctrl+Shift+D)
+4. Select "Extension Development Host"
+5. it start a new window of vscode with the extension installed
